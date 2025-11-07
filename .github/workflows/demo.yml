@@ -22,3 +22,7 @@ jobs:
 
       - name: Run tests
         run: python -m unittest discover || echo "No tests found"
+        
+      - name: Use secret
+        run: echo "Using secret:${{ secrets.API_KEY }}"
+
